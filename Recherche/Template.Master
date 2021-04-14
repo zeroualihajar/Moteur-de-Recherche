@@ -1,0 +1,133 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Template.master.cs" Inherits="Recherche.Template" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server" >
+    </asp:ContentPlaceHolder>
+   
+    <style type="text/css">
+        .auto-style1 {
+            width: 100%;
+            bottom:100%;
+            margin-right: -0.5px;
+            margin-left : -0.2px;
+            position:fixed;
+            left: -1.5px;
+            top: -1.5px;
+          
+           
+        }
+        .auto-style2 {
+            //background-color: #D5BFA6;
+            height: 52px;
+            background-image:url('/top.png');
+            width: 1600px;
+        }
+        .auto-style3 {
+           // background-color: #F2EFE6;
+            direction: ltr;
+            text-align: center;
+            background-image:url('/bt.png');
+            height: 53px;
+            position: page;
+            width: 1600px;
+        }
+        .auto-style4 {
+            height: 640px;
+            width: 1600px;
+        }
+        .auto-style5 {
+            position: absolute;
+            top: 12px;
+            left: 541px;
+            z-index: 1;
+            width: 41px;
+            height: 40px;
+        }
+        .auto-style6 {
+            position: absolute;
+            top: 16px;
+            left: 623px;
+            z-index: 1;
+            width: 34px;
+            height: 32px;
+        }
+        .auto-style7 {
+            position: absolute;
+            top: 12px;
+            left: 693px;
+            z-index: 1;
+            width: 40px;
+            height: 36px;
+        }
+        .auto-style8 {
+            position: absolute;
+            top: 17px;
+            left: 778px;
+            z-index: 1;
+        }
+        .auto-style9 {
+            position: absolute;
+            top: 13px;
+            left: 850px;
+            z-index: 1;
+        }
+        .auto-style11 {
+            width: 30px;
+            height: 23px;
+            font-family: "Bodoni MT";
+            font-style: italic;
+            position: relative;
+            top: 8px;
+            left: -23px;
+            z-index: 1;
+        }
+        .auto-style14 {
+            font-family: "Bodoni MT";
+            font-style: italic;
+        }
+        .auto-style15 {
+            width: 1325px;
+        }
+        
+    </style>
+     <link href="log.png" rel="shortcut icon" type="image/x-icon" />
+</head>
+<body style="position: relative">
+    <form id="form1" runat="server">
+        <div class="auto-style15">
+            <table class="auto-style1">
+                <tr>
+                    <td class="auto-style2">
+                        <asp:ImageButton ID="ImageButton1" runat="server" Height="48px" ImageUrl="~/log.png" Width="58px" PostBackUrl="~/Chercher.aspx" />
+                        <asp:ImageButton ID="ImageButton2" runat="server" CssClass="auto-style5" ImageUrl="~/Gmail_Icon.png" PostBackUrl="https://www.gmail.com" />
+                        <asp:ImageButton ID="ImageButton3" runat="server" CssClass="auto-style6" ImageUrl="~/face.png" PostBackUrl="https://www.facebook.com" />
+                        <asp:ImageButton ID="ImageButton4" runat="server" CssClass="auto-style7" ImageUrl="~/youtube.png" PostBackUrl="https://www.youtube.com" />
+                        <asp:ImageButton ID="ImageButton5" runat="server" CssClass="auto-style8" ImageUrl="~/calendar.png" PostBackUrl="~/Calendrier.aspx" />
+                        <asp:ImageButton ID="ImageButton6" runat="server" CssClass="auto-style9" Height="35px" ImageUrl="~/meteo.png" PostBackUrl="https://www.tameteo.com/meteo_Tanger-Afrique-Maroc-Tanger+Tetuan-GMTT-1-9777.html" />
+                    </td>
+                </tr>
+                <tr>
+                    <td class="auto-style4">
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                <p>
+                    &nbsp;</p>
+            </asp:ContentPlaceHolder>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="auto-style3">
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;<span class="auto-style14">&nbsp; </span> <img alt="" src="cop.png" class="auto-style11" /><span class="auto-style14">Département de Génie Informatique</span></td>
+                </tr>
+            </table>
+        </div>
+         <div>  
+ </div>
+        
+    </form>
+</body>
+</html>
